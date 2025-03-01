@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.10">
+	<ConfigVersions>
+		<Metadata name="CommonModule.РаботаСДокументами" id="81c486c7-a679-44ef-9a77-9fb56e925d53" configVersion="166432d378be5346a85ae2879bfa343b00000000"/>
+		<Metadata name="CommonModule.РаботаСДокументами.Module" id="81c486c7-a679-44ef-9a77-9fb56e925d53.0" configVersion="6f99021d678f10449bbba40cb7f0683600000000"/>
+		<Metadata name="CommonModule.РаботаСЦенами" id="658e41e9-a9db-4aa4-9c2f-f8d3163c433c" configVersion="8cdedf8a1970b64c81a8a09c8597ff2d00000000"/>
+		<Metadata name="CommonModule.РаботаСЦенами.Module" id="658e41e9-a9db-4aa4-9c2f-f8d3163c433c.0" configVersion="bba57deb3bfd384cb1c1bc2a811dccc000000000"/>
+		<Metadata name="CommonModule.РаботаСоСправочниками" id="28df9120-87f0-4913-aac6-4887c4204ed1" configVersion="c96a53cc361d5c4798f30b2710c7e57300000000"/>
+		<Metadata name="CommonModule.РаботаСоСправочниками.Module" id="28df9120-87f0-4913-aac6-4887c4204ed1.0" configVersion="6b838b973328fb4dbbdf0a12e15ea90c00000000"/>
+		<Metadata name="CommonPicture.Заставка" id="8e2fe59a-c718-4e62-9d30-9150b2b2a5e4" configVersion="b1129dcfad6ad44195aba161e5977c3d00000000"/>
+		<Metadata name="CommonPicture.Заставка.Picture" id="8e2fe59a-c718-4e62-9d30-9150b2b2a5e4.0" configVersion="8d20f7cd5fd2ac4486f51cf4d81cdb9600000000"/>
+		<Metadata name="CommonPicture.КлиентскаяБаза" id="970db6e5-b5ea-41c7-9c68-cd4e1e852f6d" configVersion="821107f252699a4b8a15afe24563350e00000000"/>
+		<Metadata name="CommonPicture.КлиентскаяБаза.Picture" id="970db6e5-b5ea-41c7-9c68-cd4e1e852f6d.0" configVersion="d6bf85383cea0a459e2d1c6b2fdd208300000000"/>
+		<Metadata name="CommonPicture.Логотип" id="234dc4a7-8988-4fd1-89e4-413a5ed9018f" configVersion="a8fe819a66f88f49a0a2cfbf5e6b670e00000000"/>
+		<Metadata name="CommonPicture.Логотип.Picture" id="234dc4a7-8988-4fd1-89e4-413a5ed9018f.0" configVersion="37f7146b99c9d742942f19df807d8aba00000000"/>
+		<Metadata name="CommonPicture.Организация" id="5a081cf6-cd2b-49dc-8a61-e7491ba4a17a" configVersion="4e26ffb6817aa34e94a82faab9752f1000000000"/>
+		<Metadata name="CommonPicture.Организация.Picture" id="5a081cf6-cd2b-49dc-8a61-e7491ba4a17a.0" configVersion="217b059e700531499b5be3d6b3fc4bd300000000"/>
+		<Metadata name="CommonPicture.СкладскойУчет" id="b649b97c-bd8a-493d-b77d-b7b05f3145bc" configVersion="a51d6a972114f64e991e0b50a6a1b92900000000"/>
+		<Metadata name="CommonPicture.СкладскойУчет.Picture" id="b649b97c-bd8a-493d-b77d-b7b05f3145bc.0" configVersion="a3a66196b8537a4aabea72eeca0206b400000000"/>
+		<Metadata name="CommonPicture.УправлениеПерсоналом" id="16fe641f-b6bf-47f1-93f6-673adbae69dd" configVersion="1e6d4bbc4168e742896f18b3ad4ccf4f00000000"/>
+		<Metadata name="CommonPicture.УправлениеПерсоналом.Picture" id="16fe641f-b6bf-47f1-93f6-673adbae69dd.0" configVersion="aded0cf4a19c974d87d2c28a0ec45e9b00000000"/>
+		<Metadata name="CommonPicture.ФинансовыйУчет" id="b87439c7-41c5-4405-bb61-2f564057bebb" configVersion="283639381c21044fae2998659a5549b700000000"/>
+		<Metadata name="CommonPicture.ФинансовыйУчет.Picture" id="b87439c7-41c5-4405-bb61-2f564057bebb.0" configVersion="dec22c91318a4740a06902f98012cdfa00000000"/>
+		<Metadata name="Configuration.Спорткомплекс" id="f3ae5c23-410d-46a1-94d2-d434d36946e8" configVersion="f87fd01c87fb1a41b2cedbbecf7259b200000000"/>
+		<Metadata name="Configuration.Спорткомплекс.Logo" id="0f5465cc-ff1e-4062-b32f-4fba0809c2fc.1" configVersion="65757420b069c143855b982788d397cc00000000"/>
+		<Metadata name="Configuration.Спорткомплекс.Splash" id="0f5465cc-ff1e-4062-b32f-4fba0809c2fc.2" configVersion="4e7142e421f1c14798397c8be00a97d700000000"/>
+		<Metadata name="Style.Компания" id="6ed73d54-5666-47e1-a5cf-e3450b3a88bd" configVersion="cd5d6a9a92281e46946a9e53779b21b700000000"/>
+		<Metadata name="Style.Компания.Style" id="6ed73d54-5666-47e1-a5cf-e3450b3a88bd.0" configVersion="12f61dea1b33214c8dcde55106959e6600000000"/>
+	</ConfigVersions>
+</ConfigDumpInfo>
