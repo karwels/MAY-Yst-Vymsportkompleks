@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Код" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<Table name="Оснащение" id="7">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.Оснащение</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ОснащениеКонтекстноеМеню" id="8"/>
+			<AutoCommandBar name="ОснащениеКоманднаяПанель" id="9"/>
+			<ExtendedTooltip name="ОснащениеРасширеннаяПодсказка" id="10"/>
+			<SearchStringAddition name="ОснащениеСтрокаПоиска" id="11">
+				<AdditionSource>
+					<Item>Оснащение</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ОснащениеСтрокаПоискаКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ОснащениеСтрокаПоискаРасширеннаяПодсказка" id="13"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ОснащениеСостояниеПросмотра" id="14">
+				<AdditionSource>
+					<Item>Оснащение</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ОснащениеСостояниеПросмотраКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="ОснащениеСостояниеПросмотраРасширеннаяПодсказка" id="16"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ОснащениеУправлениеПоиском" id="17">
+				<AdditionSource>
+					<Item>Оснащение</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ОснащениеУправлениеПоискомКонтекстноеМеню" id="18"/>
+				<ExtendedTooltip name="ОснащениеУправлениеПоискомРасширеннаяПодсказка" id="19"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ОснащениеНомерСтроки" id="20">
+					<DataPath>Объект.Оснащение.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ОснащениеНомерСтрокиКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ОснащениеНомерСтрокиРасширеннаяПодсказка" id="22"/>
+				</LabelField>
+				<InputField name="ОснащениеОборудование" id="23">
+					<DataPath>Объект.Оснащение.Оборудование</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ОснащениеОборудованиеКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ОснащениеОборудованиеРасширеннаяПодсказка" id="25"/>
+				</InputField>
+				<InputField name="ОснащениеКоличество" id="26">
+					<DataPath>Объект.Оснащение.Количество</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ОснащениеКоличествоКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ОснащениеКоличествоРасширеннаяПодсказка" id="28"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<PictureField name="СсылкаНаКартинку" id="29">
+			<DataPath>СсылкаНаКартинку</DataPath>
+			<PictureSize>Proportionally</PictureSize>
+			<Hyperlink>true</Hyperlink>
+			<NonselectedPictureText>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Нажмите для выбора изображения...</v8:content>
+				</v8:item>
+			</NonselectedPictureText>
+			<ContextMenu name="СсылкаНаКартинкуКонтекстноеМеню" id="30"/>
+			<ExtendedTooltip name="СсылкаНаКартинкуРасширеннаяПодсказка" id="31"/>
+			<Events>
+				<Event name="Click">СсылкаНаКартинкуНажатие</Event>
+			</Events>
+		</PictureField>
+		<Button name="УдалитьИзображение" id="32">
+			<Type>UsualButton</Type>
+			<Representation>Picture</Representation>
+			<CommandName>Form.Command.УдалитьИзображение</CommandName>
+			<Picture>
+				<xr:Ref>StdPicture.Delete</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<ExtendedTooltip name="УдалитьИзображениеРасширеннаяПодсказка" id="33"/>
+		</Button>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Зал</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="СсылкаНаКартинку" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ссылка на картинку</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="УдалитьИзображение" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить изображение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить изображение</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалитьИзображение</Action>
+		</Command>
+	</Commands>
+</Form>
