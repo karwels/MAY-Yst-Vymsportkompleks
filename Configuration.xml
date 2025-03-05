@@ -204,14 +204,6 @@
 			<CommonModule>РаботаСЦенами</CommonModule>
 			<CommonModule>РаботаСоСправочниками</CommonModule>
 			<CommonModule>РаботаСДокументами</CommonModule>
-			<Catalog>Оборудование</Catalog>
-			<Catalog>Зал</Catalog>
-			<Catalog>ТипАбонемента</Catalog>
-			<Catalog>Услуги</Catalog>
-			<Catalog>Клиенты</Catalog>
-			<Catalog>Менеджеры</Catalog>
-			<Catalog>Тренеры</Catalog>
-			<Catalog>Специализация</Catalog>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
