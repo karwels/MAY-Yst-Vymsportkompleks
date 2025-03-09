@@ -201,9 +201,46 @@
 			<CommonPicture>Организация</CommonPicture>
 			<CommonPicture>Логотип</CommonPicture>
 			<CommonPicture>Заставка</CommonPicture>
+			<Role>Администратор</Role>
+			<Role>Директор</Role>
+			<Role>Бухгалтер</Role>
+			<Role>Менеджер</Role>
+			<Role>Тренер</Role>
 			<CommonModule>РаботаСЦенами</CommonModule>
 			<CommonModule>РаботаСоСправочниками</CommonModule>
 			<CommonModule>РаботаСДокументами</CommonModule>
+			<Catalog>Оборудование</Catalog>
+			<Catalog>Зал</Catalog>
+			<Catalog>ТипАбонемента</Catalog>
+			<Catalog>Услуги</Catalog>
+			<Catalog>Клиенты</Catalog>
+			<Catalog>Менеджеры</Catalog>
+			<Catalog>Тренеры</Catalog>
+			<Catalog>Специализация</Catalog>
+			<Document>Абонемент</Document>
+			<Document>Запись</Document>
+			<Document>ЗакупкаОборудования</Document>
+			<Document>СписаниеОборудования</Document>
+			<Document>ПродажаАбонементов</Document>
+			<Document>СписаниеОпций</Document>
+			<Document>ЗарплатаМенеджеров</Document>
+			<Document>ЗарплатаТренеров</Document>
+			<Report>ОстаткиОпций</Report>
+			<Report>ОстаткиОборудования</Report>
+			<Report>ПрайсЛистУслуг</Report>
+			<Report>ПрайсЛистАбонементов</Report>
+			<Report>РейтингУслуг</Report>
+			<Report>РейтингТренеров</Report>
+			<Report>РейтингМенеджеров</Report>
+			<Report>Расписание</Report>
+			<DataProcessor>ЗагрузкаДанныхИзТабличногоДокумента_УФ</DataProcessor>
+			<InformationRegister>ЦеныНаУслуги</InformationRegister>
+			<InformationRegister>ЦеныНаАбонементы</InformationRegister>
+			<AccumulationRegister>УчетОпций</AccumulationRegister>
+			<AccumulationRegister>ОказаниеУслуг</AccumulationRegister>
+			<AccumulationRegister>УчетЗанятий</AccumulationRegister>
+			<AccumulationRegister>ОстаткиОборудования</AccumulationRegister>
+			<AccumulationRegister>ОборотПродажАбонементов</AccumulationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
