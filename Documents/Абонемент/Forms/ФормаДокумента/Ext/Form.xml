@@ -5,6 +5,15 @@
 	<RepostOnWrite>true</RepostOnWrite>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<ChildItems>
+		<Button name="Загрузить" id="38">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.Загрузить</CommandName>
+			<TextColor>style:FormBackColor</TextColor>
+			<BackColor>style:ImportantColor</BackColor>
+			<BorderColor>style:AccentColor</BorderColor>
+			<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+			<ExtendedTooltip name="ЗагрузитьРасширеннаяПодсказка" id="39"/>
+		</Button>
 		<InputField name="Номер" id="1">
 			<DataPath>Объект.Number</DataPath>
 			<EditMode>EnterOnInput</EditMode>
@@ -40,6 +49,25 @@
 			<EditMode>EnterOnInput</EditMode>
 			<ContextMenu name="ДатаОкончанияИспользованияКонтекстноеМеню" id="14"/>
 			<ExtendedTooltip name="ДатаОкончанияИспользованияРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<Button name="Заморозить" id="42">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.Заморозить</CommandName>
+			<TextColor>style:FormBackColor</TextColor>
+			<BackColor>style:ImportantColor</BackColor>
+			<BorderColor>style:AccentColor</BorderColor>
+			<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+			<ExtendedTooltip name="ЗаморозитьРасширеннаяПодсказка" id="43"/>
+		</Button>
+		<InputField name="ДатаРазморозки" id="47">
+			<DataPath>Объект.ДатаРазморозки</DataPath>
+			<ContextMenu name="ДатаРазморозкиКонтекстноеМеню" id="48"/>
+			<ExtendedTooltip name="ДатаРазморозкиРасширеннаяПодсказка" id="49"/>
+		</InputField>
+		<InputField name="КоличествоЗаморозок" id="44">
+			<DataPath>Объект.КоличествоЗаморозок</DataPath>
+			<ContextMenu name="КоличествоЗаморозокКонтекстноеМеню" id="45"/>
+			<ExtendedTooltip name="КоличествоЗаморозокРасширеннаяПодсказка" id="46"/>
 		</InputField>
 		<Table name="Опции" id="16">
 			<Representation>List</Representation>
@@ -78,24 +106,36 @@
 			<ChildItems>
 				<LabelField name="ОпцииНомерСтроки" id="29">
 					<DataPath>Объект.Опции.LineNumber</DataPath>
+					<TitleBackColor>style:AuxiliaryNavigationColor</TitleBackColor>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="ОпцииНомерСтрокиКонтекстноеМеню" id="30"/>
 					<ExtendedTooltip name="ОпцииНомерСтрокиРасширеннаяПодсказка" id="31"/>
 				</LabelField>
 				<InputField name="ОпцииУслуги" id="32">
 					<DataPath>Объект.Опции.Услуги</DataPath>
+					<TitleBackColor>style:AuxiliaryNavigationColor</TitleBackColor>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="ОпцииУслугиКонтекстноеМеню" id="33"/>
 					<ExtendedTooltip name="ОпцииУслугиРасширеннаяПодсказка" id="34"/>
 				</InputField>
 				<InputField name="ОпцииКоличество" id="35">
 					<DataPath>Объект.Опции.Количество</DataPath>
+					<TitleBackColor>style:AuxiliaryNavigationColor</TitleBackColor>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="ОпцииКоличествоКонтекстноеМеню" id="36"/>
 					<ExtendedTooltip name="ОпцииКоличествоРасширеннаяПодсказка" id="37"/>
 				</InputField>
 			</ChildItems>
 		</Table>
+		<Button name="Выгрузить" id="40">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.Выгрузить</CommandName>
+			<TextColor>style:FormBackColor</TextColor>
+			<BackColor>style:ImportantColor</BackColor>
+			<BorderColor>style:AccentColor</BorderColor>
+			<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+			<ExtendedTooltip name="ВыгрузитьРасширеннаяПодсказка" id="41"/>
+		</Button>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
@@ -109,4 +149,51 @@
 			</UseAlways>
 		</Attribute>
 	</Attributes>
+	<Commands>
+		<Command name="Загрузить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Загрузить</Action>
+		</Command>
+		<Command name="Выгрузить" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Выгрузить</Action>
+		</Command>
+		<Command name="Заморозить" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заморозить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заморозить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Заморозить</Action>
+		</Command>
+	</Commands>
 </Form>
