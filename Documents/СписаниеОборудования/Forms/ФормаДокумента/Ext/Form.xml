@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<Button name="Загрузить" id="32">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.Загрузить</CommandName>
+			<TextColor>style:FormBackColor</TextColor>
+			<BackColor>style:ImportantColor</BackColor>
+			<BorderColor>style:AccentColor</BorderColor>
+			<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+			<ExtendedTooltip name="ЗагрузитьРасширеннаяПодсказка" id="33"/>
+		</Button>
+		<InputField name="Номер" id="1">
+			<DataPath>Объект.Number</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Дата" id="4">
+			<DataPath>Объект.Date</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Менеджер" id="7">
+			<DataPath>Объект.Менеджер</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="МенеджерКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="МенеджерРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<Table name="Списание" id="10">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.Списание</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="СписаниеКонтекстноеМеню" id="11"/>
+			<AutoCommandBar name="СписаниеКоманднаяПанель" id="12"/>
+			<ExtendedTooltip name="СписаниеРасширеннаяПодсказка" id="13"/>
+			<SearchStringAddition name="СписаниеСтрокаПоиска" id="14">
+				<AdditionSource>
+					<Item>Списание</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписаниеСтрокаПоискаКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="СписаниеСтрокаПоискаРасширеннаяПодсказка" id="16"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписаниеСостояниеПросмотра" id="17">
+				<AdditionSource>
+					<Item>Списание</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписаниеСостояниеПросмотраКонтекстноеМеню" id="18"/>
+				<ExtendedTooltip name="СписаниеСостояниеПросмотраРасширеннаяПодсказка" id="19"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписаниеУправлениеПоиском" id="20">
+				<AdditionSource>
+					<Item>Списание</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписаниеУправлениеПоискомКонтекстноеМеню" id="21"/>
+				<ExtendedTooltip name="СписаниеУправлениеПоискомРасширеннаяПодсказка" id="22"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="СписаниеНомерСтроки" id="23">
+					<DataPath>Объект.Списание.LineNumber</DataPath>
+					<TitleBackColor>style:AuxiliaryNavigationColor</TitleBackColor>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписаниеНомерСтрокиКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="СписаниеНомерСтрокиРасширеннаяПодсказка" id="25"/>
+				</LabelField>
+				<InputField name="СписаниеОборудование" id="26">
+					<DataPath>Объект.Списание.Оборудование</DataPath>
+					<TitleBackColor>style:AuxiliaryNavigationColor</TitleBackColor>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписаниеОборудованиеКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="СписаниеОборудованиеРасширеннаяПодсказка" id="28"/>
+				</InputField>
+				<InputField name="СписаниеКоличество" id="29">
+					<DataPath>Объект.Списание.Количество</DataPath>
+					<TitleBackColor>style:AuxiliaryNavigationColor</TitleBackColor>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписаниеКоличествоКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="СписаниеКоличествоРасширеннаяПодсказка" id="31"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<Button name="Выгрузить" id="34">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.Выгрузить</CommandName>
+			<TextColor>style:FormBackColor</TextColor>
+			<BackColor>style:ImportantColor</BackColor>
+			<BorderColor>style:AccentColor</BorderColor>
+			<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+			<ExtendedTooltip name="ВыгрузитьРасширеннаяПодсказка" id="35"/>
+		</Button>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.СписаниеОборудования</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Загрузить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Загрузить</Action>
+		</Command>
+		<Command name="Выгрузить" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Выгрузить</Action>
+		</Command>
+	</Commands>
+</Form>

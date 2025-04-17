@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<Button name="Загрузить" id="40">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.Загрузить</CommandName>
+			<TextColor>style:FormBackColor</TextColor>
+			<BackColor>style:ImportantColor</BackColor>
+			<BorderColor>style:AccentColor</BorderColor>
+			<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+			<ExtendedTooltip name="ЗагрузитьРасширеннаяПодсказка" id="41"/>
+		</Button>
+		<InputField name="Номер" id="1">
+			<DataPath>Объект.Number</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Дата" id="4">
+			<DataPath>Объект.Date</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Менеджер" id="7">
+			<DataPath>Объект.Менеджер</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="МенеджерКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="МенеджерРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<Table name="Закупка" id="10">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.Закупка</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ЗакупкаКонтекстноеМеню" id="11"/>
+			<AutoCommandBar name="ЗакупкаКоманднаяПанель" id="12"/>
+			<ExtendedTooltip name="ЗакупкаРасширеннаяПодсказка" id="13"/>
+			<SearchStringAddition name="ЗакупкаСтрокаПоиска" id="14">
+				<AdditionSource>
+					<Item>Закупка</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ЗакупкаСтрокаПоискаКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="ЗакупкаСтрокаПоискаРасширеннаяПодсказка" id="16"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ЗакупкаСостояниеПросмотра" id="17">
+				<AdditionSource>
+					<Item>Закупка</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ЗакупкаСостояниеПросмотраКонтекстноеМеню" id="18"/>
+				<ExtendedTooltip name="ЗакупкаСостояниеПросмотраРасширеннаяПодсказка" id="19"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ЗакупкаУправлениеПоиском" id="20">
+				<AdditionSource>
+					<Item>Закупка</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ЗакупкаУправлениеПоискомКонтекстноеМеню" id="21"/>
+				<ExtendedTooltip name="ЗакупкаУправлениеПоискомРасширеннаяПодсказка" id="22"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ЗакупкаНомерСтроки" id="23">
+					<DataPath>Объект.Закупка.LineNumber</DataPath>
+					<TitleBackColor>style:AuxiliaryNavigationColor</TitleBackColor>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ЗакупкаНомерСтрокиКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ЗакупкаНомерСтрокиРасширеннаяПодсказка" id="25"/>
+				</LabelField>
+				<InputField name="ЗакупкаОборудование" id="26">
+					<DataPath>Объект.Закупка.Оборудование</DataPath>
+					<TitleBackColor>style:AuxiliaryNavigationColor</TitleBackColor>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ЗакупкаОборудованиеКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ЗакупкаОборудованиеРасширеннаяПодсказка" id="28"/>
+				</InputField>
+				<InputField name="ЗакупкаКоличество" id="29">
+					<DataPath>Объект.Закупка.Количество</DataPath>
+					<TitleBackColor>style:AuxiliaryNavigationColor</TitleBackColor>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ЗакупкаКоличествоКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ЗакупкаКоличествоРасширеннаяПодсказка" id="31"/>
+				</InputField>
+				<InputField name="ЗакупкаЦена" id="32">
+					<DataPath>Объект.Закупка.Цена</DataPath>
+					<TitleBackColor>style:AuxiliaryNavigationColor</TitleBackColor>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ЗакупкаЦенаКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ЗакупкаЦенаРасширеннаяПодсказка" id="34"/>
+					<Events>
+						<Event name="OnChange">ЗакупкаЦенаПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ЗакупкаСумма" id="35">
+					<DataPath>Объект.Закупка.Сумма</DataPath>
+					<TitleBackColor>style:AuxiliaryNavigationColor</TitleBackColor>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ЗакупкаСуммаКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="ЗакупкаСуммаРасширеннаяПодсказка" id="37"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<Button name="Выгрузить" id="38">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.Выгрузить</CommandName>
+			<TextColor>style:FormBackColor</TextColor>
+			<BackColor>style:ImportantColor</BackColor>
+			<BorderColor>style:ImportantColor</BorderColor>
+			<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+			<ExtendedTooltip name="ВыгрузитьРасширеннаяПодсказка" id="39"/>
+		</Button>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ЗакупкаОборудования</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Выгрузить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Выгрузить</Action>
+		</Command>
+		<Command name="Загрузить" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Загрузить</Action>
+		</Command>
+	</Commands>
+</Form>
