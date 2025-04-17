@@ -5,6 +5,15 @@
 	<RepostOnWrite>true</RepostOnWrite>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<ChildItems>
+		<Button name="ФормаЗагрузить" id="54">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.Загрузить</CommandName>
+			<TextColor>style:FormBackColor</TextColor>
+			<BackColor>style:ImportantColor</BackColor>
+			<BorderColor>style:AccentColor</BorderColor>
+			<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+			<ExtendedTooltip name="ФормаЗагрузитьРасширеннаяПодсказка" id="55"/>
+		</Button>
 		<InputField name="Номер" id="1">
 			<DataPath>Объект.Number</DataPath>
 			<EditMode>EnterOnInput</EditMode>
@@ -87,12 +96,14 @@
 			<ChildItems>
 				<LabelField name="ЗанятиеНомерСтроки" id="35">
 					<DataPath>Объект.Занятие.LineNumber</DataPath>
+					<TitleBackColor>style:AuxiliaryNavigationColor</TitleBackColor>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="ЗанятиеНомерСтрокиКонтекстноеМеню" id="36"/>
 					<ExtendedTooltip name="ЗанятиеНомерСтрокиРасширеннаяПодсказка" id="37"/>
 				</LabelField>
 				<InputField name="ЗанятиеУслуги" id="38">
 					<DataPath>Объект.Занятие.Услуги</DataPath>
+					<TitleBackColor>style:AuxiliaryNavigationColor</TitleBackColor>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="ЗанятиеУслугиКонтекстноеМеню" id="39"/>
 					<ExtendedTooltip name="ЗанятиеУслугиРасширеннаяПодсказка" id="40"/>
@@ -102,6 +113,7 @@
 				</InputField>
 				<InputField name="ЗанятиеКоличество" id="41">
 					<DataPath>Объект.Занятие.Количество</DataPath>
+					<TitleBackColor>style:AuxiliaryNavigationColor</TitleBackColor>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="ЗанятиеКоличествоКонтекстноеМеню" id="42"/>
 					<ExtendedTooltip name="ЗанятиеКоличествоРасширеннаяПодсказка" id="43"/>
@@ -111,6 +123,7 @@
 				</InputField>
 				<InputField name="ЗанятиеЦена" id="44">
 					<DataPath>Объект.Занятие.Цена</DataPath>
+					<TitleBackColor>style:AuxiliaryNavigationColor</TitleBackColor>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="ЗанятиеЦенаКонтекстноеМеню" id="45"/>
 					<ExtendedTooltip name="ЗанятиеЦенаРасширеннаяПодсказка" id="46"/>
@@ -120,12 +133,22 @@
 				</InputField>
 				<InputField name="ЗанятиеСумма" id="47">
 					<DataPath>Объект.Занятие.Сумма</DataPath>
+					<TitleBackColor>style:AuxiliaryNavigationColor</TitleBackColor>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="ЗанятиеСуммаКонтекстноеМеню" id="48"/>
 					<ExtendedTooltip name="ЗанятиеСуммаРасширеннаяПодсказка" id="49"/>
 				</InputField>
 			</ChildItems>
 		</Table>
+		<Button name="Выгрузить" id="52">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.Выгрузить</CommandName>
+			<TextColor>style:FormBackColor</TextColor>
+			<BackColor>style:ImportantColor</BackColor>
+			<BorderColor>style:ImportantColor</BorderColor>
+			<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+			<ExtendedTooltip name="ВыгрузитьРасширеннаяПодсказка" id="53"/>
+		</Button>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
@@ -139,4 +162,36 @@
 			</UseAlways>
 		</Attribute>
 	</Attributes>
+	<Commands>
+		<Command name="Выгрузить" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Выгрузить</Action>
+		</Command>
+		<Command name="Загрузить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Загрузить</Action>
+		</Command>
+	</Commands>
 </Form>
