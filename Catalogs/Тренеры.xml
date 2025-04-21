@@ -40,7 +40,7 @@
 			<UseStandardCommands>true</UseStandardCommands>
 			<Owners/>
 			<SubordinationUse>ToItems</SubordinationUse>
-			<CodeLength>2</CodeLength>
+			<CodeLength>5</CodeLength>
 			<DescriptionLength>25</DescriptionLength>
 			<CodeType>String</CodeType>
 			<CodeAllowedLength>Variable</CodeAllowedLength>
@@ -254,7 +254,12 @@
 					<xr:DataHistory>Use</xr:DataHistory>
 					<xr:MarkNegatives>false</xr:MarkNegatives>
 					<xr:MinValue xsi:nil="true"/>
-					<xr:Synonym/>
+					<xr:Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ФИО</v8:content>
+						</v8:item>
+					</xr:Synonym>
 					<xr:Comment/>
 					<xr:FullTextSearch>Use</xr:FullTextSearch>
 					<xr:ChoiceParameterLinks/>
@@ -303,7 +308,7 @@
 			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
 			<DefaultObjectForm/>
 			<DefaultFolderForm/>
-			<DefaultListForm/>
+			<DefaultListForm>Catalog.Тренеры.Form.ФормаСписка</DefaultListForm>
 			<DefaultChoiceForm/>
 			<DefaultFolderChoiceForm/>
 			<AuxiliaryObjectForm/>
@@ -568,6 +573,7 @@
 					</Attribute>
 				</ChildObjects>
 			</TabularSection>
+			<Form>ФормаСписка</Form>
 		</ChildObjects>
 	</Catalog>
 </MetaDataObject>
