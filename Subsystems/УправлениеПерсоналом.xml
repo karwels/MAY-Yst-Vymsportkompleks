@@ -21,6 +21,11 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Менеджеры</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Тренеры</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Специализация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.Расписание</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ЗарплатаМенеджеров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ЗарплатаТренеров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.РейтингМенеджеров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.РейтингТренеров</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

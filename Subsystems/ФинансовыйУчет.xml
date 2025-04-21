@@ -19,6 +19,17 @@
 			</Picture>
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Услуги</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЦеныНаУслуги</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ЗакупкаОборудования</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПродажаАбонементов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ЗарплатаМенеджеров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ЗарплатаТренеров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВозвратАбонементов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЦеныНаАбонементы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.РейтингМенеджеров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.РейтингТренеров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ПрайсЛистАбонементов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ПрайсЛистУслуг</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

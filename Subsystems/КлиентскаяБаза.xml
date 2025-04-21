@@ -22,6 +22,14 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ТипАбонемента</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Клиенты</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Зал</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.Абонемент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.Запись</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПродажаАбонементов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.СписаниеОпций</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ПрайсЛистУслуг</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ПрайсЛистАбонементов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.Расписание</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВозвратАбонементов</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

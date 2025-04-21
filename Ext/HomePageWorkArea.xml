@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<HomePageWorkArea xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+	<WorkingAreaTemplate>TwoColumnsEqualWidth</WorkingAreaTemplate>
+	<LeftColumn>
+		<Item>
+			<Form>Document.Абонемент.Form.ФормаДокумента</Form>
+			<Height>10</Height>
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Администратор">true</xr:Value>
+				<xr:Value name="03b6f427-f541-4b23-8905-22709c6389f4">false</xr:Value>
+				<xr:Value name="Role.Бухгалтер">false</xr:Value>
+				<xr:Value name="Role.Тренер">true</xr:Value>
+			</Visibility>
+		</Item>
+		<Item>
+			<Form>Document.Запись.Form.ФормаДокумента</Form>
+			<Height>10</Height>
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Администратор">true</xr:Value>
+				<xr:Value name="03b6f427-f541-4b23-8905-22709c6389f4">false</xr:Value>
+				<xr:Value name="Role.Бухгалтер">false</xr:Value>
+				<xr:Value name="Role.Тренер">true</xr:Value>
+			</Visibility>
+		</Item>
+		<Item>
+			<Form>Document.ЗарплатаМенеджеров.Form.ФормаДокумента</Form>
+			<Height>10</Height>
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Администратор">true</xr:Value>
+				<xr:Value name="03b6f427-f541-4b23-8905-22709c6389f4">false</xr:Value>
+				<xr:Value name="Role.Менеджер">false</xr:Value>
+				<xr:Value name="Role.Тренер">false</xr:Value>
+			</Visibility>
+		</Item>
+		<Item>
+			<Form>Document.ЗарплатаТренеров.Form.ФормаДокумента</Form>
+			<Height>10</Height>
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Администратор">true</xr:Value>
+				<xr:Value name="03b6f427-f541-4b23-8905-22709c6389f4">false</xr:Value>
+				<xr:Value name="Role.Менеджер">false</xr:Value>
+				<xr:Value name="Role.Тренер">false</xr:Value>
+			</Visibility>
+		</Item>
+	</LeftColumn>
+	<RightColumn>
+		<Item>
+			<Form>Document.ПродажаАбонементов.Form.ФормаДокумента</Form>
+			<Height>10</Height>
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Администратор">true</xr:Value>
+				<xr:Value name="03b6f427-f541-4b23-8905-22709c6389f4">false</xr:Value>
+				<xr:Value name="Role.Бухгалтер">false</xr:Value>
+				<xr:Value name="Role.Тренер">false</xr:Value>
+			</Visibility>
+		</Item>
+	</RightColumn>
+</HomePageWorkArea>

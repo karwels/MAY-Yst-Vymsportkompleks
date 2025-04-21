@@ -17,7 +17,27 @@
 				<xr:Ref>CommonPicture.Организация</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
-			<Content/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЦеныНаУслуги</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЦеныНаАбонементы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.УчетОпций</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ОказаниеУслуг</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.УчетЗанятий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОстаткиОпций</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ОстаткиОборудования</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ОборотПродажАбонементов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОстаткиОборудования</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ПрайсЛистУслуг</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ПрайсЛистАбонементов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.РейтингУслуг</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.РейтингТренеров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.РейтингМенеджеров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.Расписание</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ExchangePlan.Филиалы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ОбщиеНастройки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ОбменДанными</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">33e68b45-c14d-4397-ace7-1bbb1640351d</xr:Item>
+			</Content>
 		</Properties>
 		<ChildObjects/>
 	</Subsystem>

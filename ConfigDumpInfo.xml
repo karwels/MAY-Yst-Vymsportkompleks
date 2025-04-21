@@ -80,7 +80,7 @@
 		<Metadata name="Catalog.ТипАбонемента.Form.ФормаСписка" id="41ead195-c489-455f-8344-7c667cffad34" configVersion="458bf8ab1f1892418fefa7f0df70a09200000000"/>
 		<Metadata name="Catalog.ТипАбонемента.Form.ФормаСписка.Form" id="41ead195-c489-455f-8344-7c667cffad34.0" configVersion="9fc49fbb5ae3ed4fa76177c410a0d50e00000000"/>
 		<Metadata name="Catalog.ТипАбонемента.ObjectModule" id="3a346dcb-fb30-4447-88f0-8140902dc223.0" configVersion="ce6f52b726e3bf4298efcfdc6b5c234200000000"/>
-		<Metadata name="Catalog.Тренеры" id="a0426bd2-af41-4d41-8795-65edd80192c5" configVersion="27feaf8999f11f4490767afd51216f7100000000">
+		<Metadata name="Catalog.Тренеры" id="a0426bd2-af41-4d41-8795-65edd80192c5" configVersion="aab9293844244449a58d030d25d9f31b00000000">
 			<Metadata name="Catalog.Тренеры.TabularSection.Специализация.Attribute.Специализация" id="4c7cd1d5-7a90-49b4-90c6-4fd4b08045fc"/>
 			<Metadata name="Catalog.Тренеры.Attribute.НомерТелефона" id="884cb746-886c-4e56-9eb1-caaef86ae9d8"/>
 			<Metadata name="Catalog.Тренеры.TabularSection.Специализация" id="89f42dbf-7a21-4b28-be4c-c5443d57e99c"/>
@@ -322,8 +322,8 @@
 		<Metadata name="Report.ОстаткиОпций.Template.ОсновнаяСхемаКомпоновкиДанных" id="253b5542-e6c3-4806-a77b-a2dc89f01126" configVersion="ee557f69878f10468577e9e7f19acec100000000"/>
 		<Metadata name="Report.ОстаткиОпций.Template.ОсновнаяСхемаКомпоновкиДанных.Template" id="253b5542-e6c3-4806-a77b-a2dc89f01126.0" configVersion="1d08db804258a94b9a842922bdf9a47100000000"/>
 		<Metadata name="Report.ПрайсЛистАбонементов" id="2d6b4b0b-3f53-4575-a824-fc360990be30" configVersion="99eea6412b93cc4b9f8ed2d4479fc40300000000"/>
-		<Metadata name="Report.ПрайсЛистАбонементов.Template.ОсновнаяСхемаКомпоновкиДанных" id="52388264-55bd-4bc8-9254-c77ce24dc332" configVersion="f1ea3a147d5f4545943ef1f66b24c09900000000"/>
-		<Metadata name="Report.ПрайсЛистАбонементов.Template.ОсновнаяСхемаКомпоновкиДанных.Template" id="52388264-55bd-4bc8-9254-c77ce24dc332.0" configVersion="55ea056ee57c5b4f92be0782661407be00000000"/>
+		<Metadata name="Report.ПрайсЛистАбонементов.Template.ОсновнаяСхемаКомпоновкиДанных" id="52388264-55bd-4bc8-9254-c77ce24dc332" configVersion="ae7f6879b9d1694ba75506e83ca6a48b00000000"/>
+		<Metadata name="Report.ПрайсЛистАбонементов.Template.ОсновнаяСхемаКомпоновкиДанных.Template" id="52388264-55bd-4bc8-9254-c77ce24dc332.0" configVersion="838a0f71726658459872ddfbc85a35e600000000"/>
 		<Metadata name="Report.ПрайсЛистУслуг" id="e611b00a-aab8-424f-ae65-affda2aa421e" configVersion="c7b903c26cf1974b8e94fd02ecab2f2f00000000"/>
 		<Metadata name="Report.ПрайсЛистУслуг.Template.ОсновнаяСхемаКомпоновкиДанных" id="3c477d5f-2c24-4e95-972e-eaf3113f7206" configVersion="a000b97bdf00ac40b0f46ceee443701d00000000"/>
 		<Metadata name="Report.ПрайсЛистУслуг.Template.ОсновнаяСхемаКомпоновкиДанных.Template" id="3c477d5f-2c24-4e95-972e-eaf3113f7206.0" configVersion="83aa039cbcd3d34a852ade574fe8a52d00000000"/>
@@ -353,7 +353,7 @@
 		<Metadata name="Subsystem.Организация" id="a327d0ae-19c3-4157-a2cb-39fd329b2719" configVersion="27dde78fc3f38b4bb20165047786882600000000"/>
 		<Metadata name="Subsystem.Организация.CommandInterface" id="a327d0ae-19c3-4157-a2cb-39fd329b2719.1" configVersion="ac6568a405a194499a2ade4d3fa598f900000000"/>
 		<Metadata name="Subsystem.СкладскойУчет" id="a4b5c8f8-e32b-442e-b5e9-a56226871b9f" configVersion="eacb5ae145fb3c4fb02de6462c35365300000000"/>
-		<Metadata name="Subsystem.УправлениеПерсоналом" id="23dbe485-cf48-402f-80ae-f72224d06d5b" configVersion="2a11fe9f9b870340b9682c166fb93a1700000000"/>
-		<Metadata name="Subsystem.ФинансовыйУчет" id="5371bef9-759d-452f-bf0c-d14399477ba7" configVersion="5e1ab4fb0d41934ab74a42836b96038500000000"/>
+		<Metadata name="Subsystem.УправлениеПерсоналом" id="23dbe485-cf48-402f-80ae-f72224d06d5b" configVersion="73741c046b258f409f165ccf74d0607700000000"/>
+		<Metadata name="Subsystem.ФинансовыйУчет" id="5371bef9-759d-452f-bf0c-d14399477ba7" configVersion="cb65136b2f07684aa6de897ea417409e00000000"/>
 	</ConfigVersions>
 </ConfigDumpInfo>

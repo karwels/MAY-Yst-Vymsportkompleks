@@ -30,6 +30,9 @@
 					<v8:content>Клиент</v8:content>
 				</v8:item>
 			</title>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
 			<attributeUseRestriction>
 				<field>true</field>
 				<condition>true</condition>
