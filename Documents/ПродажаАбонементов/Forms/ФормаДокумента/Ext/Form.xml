@@ -5,6 +5,15 @@
 	<RepostOnWrite>true</RepostOnWrite>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<ChildItems>
+		<Button name="ФормаЗагрузить" id="40">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.Загрузить</CommandName>
+			<TextColor>style:FormBackColor</TextColor>
+			<BackColor>style:ImportantColor</BackColor>
+			<BorderColor>style:AccentColor</BorderColor>
+			<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+			<ExtendedTooltip name="ФормаЗагрузитьРасширеннаяПодсказка" id="41"/>
+		</Button>
 		<InputField name="Номер" id="1">
 			<DataPath>Объект.Number</DataPath>
 			<EditMode>EnterOnInput</EditMode>
@@ -72,30 +81,44 @@
 			<ChildItems>
 				<LabelField name="ПродажаНомерСтроки" id="26">
 					<DataPath>Объект.Продажа.LineNumber</DataPath>
+					<TitleBackColor>style:AuxiliaryNavigationColor</TitleBackColor>
 					<EditMode>EnterOnInput</EditMode>
+					<BackColor>#99B4D1</BackColor>
 					<ContextMenu name="ПродажаНомерСтрокиКонтекстноеМеню" id="27"/>
 					<ExtendedTooltip name="ПродажаНомерСтрокиРасширеннаяПодсказка" id="28"/>
 				</LabelField>
 				<InputField name="ПродажаАбонемент" id="29">
 					<DataPath>Объект.Продажа.Абонемент</DataPath>
+					<TitleBackColor>style:AuxiliaryNavigationColor</TitleBackColor>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="ПродажаАбонементКонтекстноеМеню" id="30"/>
 					<ExtendedTooltip name="ПродажаАбонементРасширеннаяПодсказка" id="31"/>
 				</InputField>
 				<InputField name="ПродажаТипАбонемента" id="32">
 					<DataPath>Объект.Продажа.ТипАбонемента</DataPath>
+					<TitleBackColor>style:AuxiliaryNavigationColor</TitleBackColor>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="ПродажаТипАбонементаКонтекстноеМеню" id="33"/>
 					<ExtendedTooltip name="ПродажаТипАбонементаРасширеннаяПодсказка" id="34"/>
 				</InputField>
 				<InputField name="ПродажаЦена" id="35">
 					<DataPath>Объект.Продажа.Цена</DataPath>
+					<TitleBackColor>style:AuxiliaryNavigationColor</TitleBackColor>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="ПродажаЦенаКонтекстноеМеню" id="36"/>
 					<ExtendedTooltip name="ПродажаЦенаРасширеннаяПодсказка" id="37"/>
 				</InputField>
 			</ChildItems>
 		</Table>
+		<Button name="Выгрузить" id="38">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.Выгрузить</CommandName>
+			<TextColor>style:FormBackColor</TextColor>
+			<BackColor>style:ImportantColor</BackColor>
+			<BorderColor>style:ImportantColor</BorderColor>
+			<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+			<ExtendedTooltip name="ВыгрузитьРасширеннаяПодсказка" id="39"/>
+		</Button>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
@@ -109,4 +132,36 @@
 			</UseAlways>
 		</Attribute>
 	</Attributes>
+	<Commands>
+		<Command name="Выгрузить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Выгрузить</Action>
+		</Command>
+		<Command name="Загрузить" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Загрузить</Action>
+		</Command>
+	</Commands>
 </Form>

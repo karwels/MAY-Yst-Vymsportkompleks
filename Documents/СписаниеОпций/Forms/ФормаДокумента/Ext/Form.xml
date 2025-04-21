@@ -5,6 +5,14 @@
 	<RepostOnWrite>true</RepostOnWrite>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<ChildItems>
+		<Button name="Загрузить" id="41">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.Загрузить</CommandName>
+			<TextColor>style:FormBackColor</TextColor>
+			<BackColor>style:ImportantColor</BackColor>
+			<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+			<ExtendedTooltip name="ЗагрузитьРасширеннаяПодсказка" id="42"/>
+		</Button>
 		<InputField name="Номер" id="1">
 			<DataPath>Объект.Number</DataPath>
 			<EditMode>EnterOnInput</EditMode>
@@ -81,24 +89,36 @@
 			<ChildItems>
 				<LabelField name="ОпцииНомерСтроки" id="32">
 					<DataPath>Объект.Опции.LineNumber</DataPath>
+					<TitleBackColor>style:AuxiliaryNavigationColor</TitleBackColor>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="ОпцииНомерСтрокиКонтекстноеМеню" id="33"/>
 					<ExtendedTooltip name="ОпцииНомерСтрокиРасширеннаяПодсказка" id="34"/>
 				</LabelField>
 				<InputField name="ОпцииУслуги" id="35">
 					<DataPath>Объект.Опции.Услуги</DataPath>
+					<TitleBackColor>style:AuxiliaryNavigationColor</TitleBackColor>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="ОпцииУслугиКонтекстноеМеню" id="36"/>
 					<ExtendedTooltip name="ОпцииУслугиРасширеннаяПодсказка" id="37"/>
 				</InputField>
 				<InputField name="ОпцииКоличество" id="38">
 					<DataPath>Объект.Опции.Количество</DataPath>
+					<TitleBackColor>style:AuxiliaryNavigationColor</TitleBackColor>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="ОпцииКоличествоКонтекстноеМеню" id="39"/>
 					<ExtendedTooltip name="ОпцииКоличествоРасширеннаяПодсказка" id="40"/>
 				</InputField>
 			</ChildItems>
 		</Table>
+		<Button name="Выгрузить" id="43">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.Выгрузить</CommandName>
+			<TextColor>style:FormBackColor</TextColor>
+			<BackColor>style:ImportantColor</BackColor>
+			<BorderColor>style:AccentColor</BorderColor>
+			<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+			<ExtendedTooltip name="ВыгрузитьРасширеннаяПодсказка" id="44"/>
+		</Button>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
@@ -112,4 +132,36 @@
 			</UseAlways>
 		</Attribute>
 	</Attributes>
+	<Commands>
+		<Command name="Загрузить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Загрузить</Action>
+		</Command>
+		<Command name="Выгрузить" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Выгрузить</Action>
+		</Command>
+	</Commands>
 </Form>
