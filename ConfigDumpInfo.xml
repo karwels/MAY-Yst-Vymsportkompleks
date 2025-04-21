@@ -145,8 +145,8 @@
 			<Metadata name="Document.Абонемент.Command.Печать" id="bf25d9dd-df12-440c-926b-4c001852bcf4"/>
 		</Metadata>
 		<Metadata name="Document.Абонемент.Command.Печать.CommandModule" id="bf25d9dd-df12-440c-926b-4c001852bcf4.2" configVersion="57c5a310a80a6049b44161fee7d2894500000000"/>
-		<Metadata name="Document.Абонемент.Form.ФормаДокумента" id="7a925b1e-f55e-4623-9b55-219ec4e1f820" configVersion="a71152306d414f4c8182aeaca7cbe79f00000000"/>
-		<Metadata name="Document.Абонемент.Form.ФормаДокумента.Form" id="7a925b1e-f55e-4623-9b55-219ec4e1f820.0" configVersion="1668563eb5f32c4dac2125c74951e75e00000000"/>
+		<Metadata name="Document.Абонемент.Form.ФормаДокумента" id="7a925b1e-f55e-4623-9b55-219ec4e1f820" configVersion="2ae726145d124948ac3f0587de4478ee00000000"/>
+		<Metadata name="Document.Абонемент.Form.ФормаДокумента.Form" id="7a925b1e-f55e-4623-9b55-219ec4e1f820.0" configVersion="40f56d593ac9ba448decd2c54a08bd7500000000"/>
 		<Metadata name="Document.Абонемент.Form.ФормаСписка" id="613095e6-e3a3-48a2-a687-6c46485ce48e" configVersion="25e50941ed44e34296f89b83ccda031900000000"/>
 		<Metadata name="Document.Абонемент.Form.ФормаСписка.Form" id="613095e6-e3a3-48a2-a687-6c46485ce48e.0" configVersion="87458a6d2d5b2241b7e81d9172a122aa00000000"/>
 		<Metadata name="Document.Абонемент.ManagerModule" id="8039e9a2-5040-4164-81f6-c241926f8e41.2" configVersion="eb57150bd9b503429588769b8b0fbcf900000000"/>
